@@ -1,0 +1,771 @@
+@font-face {
+    font-family: "Lato";
+    src: url("./font/Lato-Black.ttf") format("woff2"),
+        url("./font/Lato-Black.ttf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("./font/Roboto.ttf") format("woff2"),
+        url("./font/Roboto.ttf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter-Black";
+    src: url("./font/Inter-Black.otf") format("woff2"),
+        url("./font/Inter-Black.otf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Korataki";
+    src: url("./font/korataki.otf") format("woff2"),
+        url("./font/korataki.otf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: "Lato", "Roboto", "Inter-Black","Korataki", sans-serif;
+    color: #101010;
+  }
+  button,
+  a{
+   cursor: pointer;
+   text-decoration: none;
+  }
+  p,
+  h2,
+  h1,
+  h3{
+    margin: 0;
+  }
+  li{
+    list-style: none;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+ .header_section{
+  background-color: #231815;
+  padding: 12px 0 12px;
+  padding-right: 13%;
+  margin-bottom: 12px;
+ }
+ .header_ul-link{
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFF;
+ }
+ .header_ul{
+  display: flex;
+  justify-content: end;
+ }
+ .header_ul-li{
+  margin-right: 4%;
+ }
+ .header_ul-li:nth-child(3){
+  margin-right: 0;
+ }
+ .header_list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13% 0;
+  flex-wrap: wrap;
+ }
+ .list2{
+  display: flex;
+  align-items: center;
+  margin-right: 7%;
+  width: 30%;
+ }
+ .header_list-link{
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #231815;
+  /* margin-right: 5%; */
+ }
+ .header_list-link:nth-child(3){
+  margin-right: 0;
+ }
+ .list1{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+ }
+ .header_list-link1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .list_span{
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #231815;
+ }
+ .list_span--color{
+  color: #FFFF;
+ }
+ .header_list-item:nth-child(1){
+  margin-right: 5%;
+ }
+ .header_list-item:nth-child(2){
+  margin-right: 5%;
+ }
+ .header_list-item1:nth-child(1){
+  margin-right: 3%;
+ }
+ .header_list-item1:nth-child(2){
+  margin-right: 2%;
+ }
+ .header_list-link1--button{
+  width: 138px;
+  height: 39px;
+  border-radius: 100px;
+  gap: 5px;
+  background-color: #000000;
+  position: relative;
+ }
+ .list_span--position{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  color: 
+  #1A1A1A;
+  background-color: #FFFF;
+  font-family: "Inter-Black";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 33px;
+  top: 1px;
+ }
+ .header{
+  margin-bottom: 60px;
+ }
+ .main{
+  margin: 0 13% 60px;
+ }
+ .main_header{
+  font-family: "Korataki";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 61px;
+  color: #231815;
+  margin-bottom: 40px;
+ }
+ .main_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+ }
+ .main_h2{
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #231815;
+  margin: 20px 0 12px;
+ }
+ .main_span{
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  color: #231815;
+ }
+ .main_span--color{
+  color: #E45302;
+ }
+ .main_span--two-color{
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  color: #808080;
+  margin-left: 1%;
+ }
+ .main_img{
+  position: relative;
+ }
+ .img-button{
+  border: 0;
+  height: 38px;
+  width: 126px;
+  border-radius: 100px;
+  background-color: #231815;
+  color: 
+  #FFFFFF;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  cursor: pointer;
+ }
+ .main_list-item{
+  position: relative;
+ }
+ .img-button--color{
+  border: 0;
+  height: 48px;
+  width: 258px;
+  border-radius: 100px;
+  background-color: #E45302;
+  color: 
+  #FFFFFF;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  cursor: pointer;
+ }
+ .footer{
+  background-color: #0C0C0C;
+  padding: 0 13% 60px;
+ }
+ .footer_list{
+  padding: 61px 0 60px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8%;
+ }
+ .footer_list-list{
+  display: flex;
+  flex-direction: column;
+ }
+ .paragraph{
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #808080;
+  /* margin-top: 53px; */
+ }
+ .footer_list-header{
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: 
+  #FFFFFF;
+  margin-bottom: 20px;
+ }
+ .footer_list-list-paragraph{
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: 
+  #FFFFFF;
+ }
+ .footer_ul2-item{
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #808080;
+ }
+ .footer_list-list-paragraph--margin{
+  margin-bottom: 38px;
+ }
+ .footer_list-list-paragraph--margin1{
+  margin-bottom: 25px;
+ }
+ .footer_list-list-paragraph3{
+  margin-bottom: 35px;
+}
+.footer_list-list-paragraph4{
+  margin-bottom: 72px;
+}
+.footer_ul3{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.svg1{
+  display: none;
+}
+.button--display{
+  display: none;
+}
+.logo-svg2{
+  display: none;
+}
+.footer_list-list-item:nth-child(2){
+  grid-column-start: 1;
+}
+.footer_list-list-item:nth-child(3){
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+.footer_list-list-item:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+.footer_list-list-item:nth-child(5){
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 3;
+}
+.footer_list-list-item:nth-child(6){
+  grid-row-start: 1;
+  grid-column-start: 4;
+}
+.footer_list-list-paragraph5{
+  text-align: end;
+}
+.footer_ul3{
+  display: flex;
+  justify-content: end; 
+}
+.footer_ul3-item:nth-child(1){
+  margin-right: 10%;
+}
+.footer_ul3-item:nth-child(2){
+  margin-right: 10%;
+}
+.svg-opl{
+  width: 45px;
+}
+.main_h2--before:before{
+  content: "Встраиваемый светильник Markt";
+}
+.main_span--color1-before:before{
+  content: "3 490 ₽";
+}
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+  margin: 8px 34px 0;
+  position: absolute;
+  z-index: 5;
+  left: 83%;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+  background: 
+  #0D0B26;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 
+  #0D0B26;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 14px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.modal{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.close-modal{
+  display: none;
+}
+.open-modal{
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.list-modal{
+  text-align: center;
+  padding: 50px;
+}
+.header_list-link-modal{
+  color: #0D0B26;
+  margin-bottom: 20px;
+}
+.header_list-modal{
+  margin-bottom: 20px;
+}
+.div--flex--destop{
+  display: none;
+}
+.img--none1{
+  display: none;
+}
+.before::before{
+  content: '6 700 ₽';
+}
+.before1::before{
+  content: 'Линейный светильник ARG';
+}
+.before4::before{
+  content: '6 060 ₽';
+}
+.special{
+  display: none;
+}
+.footer_list-list-paragraph--margin5{
+  width: 260px;
+}
+
+
+@media(max-width:1919px){
+.header_section{
+    padding-right: 11%;
+  }
+.header_list-item:nth-child(1) {
+    margin-right: 10%;
+}
+.list2 {
+  margin-right: 11%;
+  width: 29%;
+}
+.header_list-item1:nth-child(1) {
+  display: none;
+}
+.svg2{
+  display: none;
+}
+.svg1{
+  display: block;
+}
+.header_list-item1:nth-child(2) {
+  margin-right: 2%;
+}
+.header_list {
+  padding: 0 11% 0;
+}
+.main {
+  margin: 0 11% 60px;
+}
+.main_img{
+  width: 287px;
+  height: 428px;
+}
+.main_list {
+  gap: 2%;
+}
+.img-button--color{
+  margin-left: -8%;
+}
+}
+@media(max-width:1599px){
+  .burger {
+    margin: 8px 25px 0
+  }
+.header_section {
+  display: none;
+}
+.header {
+  margin-top: 12px;
+}
+.list2 {
+  display: none;
+}
+.list1 {
+display: none;
+}
+.button--display{
+  display: block;
+  border: none;
+  background-color: #FFFF;
+}
+.main_img {
+  width: 320px;
+  height: 477px;
+}
+.main_list {
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.logo-svg{
+  display: none;
+}
+.logo-svg2{
+  display: block;
+}
+.main_header {
+  font-size: 32px;
+  line-height: 45px;
+}
+.img-button {
+  left: 20%;
+}
+.img-button--color {
+  left: 25%;
+}
+.main_list {
+  gap: 5%;
+}
+.header_list {
+  padding: 12px 6% 0;
+}
+.main {
+  margin: 0 6% 60px;
+}
+.main_list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.main_list-item {
+  margin-bottom: 50px;
+}
+.img-button {
+  left: 4%;
+}
+.footer_list-list-paragraph5 {
+  text-align: start;
+}
+br{
+  display: none;
+}
+.footer_list{
+  gap: 3%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer_list-list-item:nth-child(2){
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-column-end: 4;
+}
+.footer_list-list-item:nth-child(3){
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.footer_list-list-item:nth-child(5){
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.footer_list-list-item:nth-child(6){
+grid-column-start: 1;
+grid-row-start: 3;
+grid-column-end: 3;
+
+}
+.footer_list-list-item:nth-child(7){
+grid-column-start: 1;
+text-align: center;
+justify-content: center;
+display: flex;
+justify-content: left;
+}
+.footer{
+  padding: 0 6% 0;
+}
+.svg-opl{
+  width: 45px;
+}
+.footer_ul3{
+  justify-content: start;
+}
+}
+@media(max-width:769px){
+.main_h2--before:before{
+  content: "Линейный светильник ARG";
+}
+  .main_header {
+    font-size: 24px;
+    line-height: 33px;
+}
+.main_img {
+  width: 155px;
+  height: 230px;
+}
+.img-button--display{
+  display: none;
+}
+.main_h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.img-button {
+  width: 70px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  left: 0;
+}
+.main_span {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.main_span--two-color {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.main {
+  margin: 0 6% 60px;
+}
+.main_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer{
+  padding: 0 6% 150px;
+}
+.footer_list{
+  gap: 3%;
+  grid-template-columns: 1fr;
+}
+.footer_list-list-item:nth-child(3){
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.footer_list-list-item:nth-child(4){
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.footer_list-list-item:nth-child(5){
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.footer_list-list-item:nth-child(6){
+grid-column-start: 1;
+grid-row-start: 5;
+grid-column-end: 5;
+
+}
+.footer_list-list-item:nth-child(2){
+grid-column-start: 1;
+grid-row-start: 7;
+}
+.footer_list-list-item:nth-child(7){
+  grid-column-start: 1;
+  grid-row-start: 8;
+  text-align: start;
+  justify-content: start;
+  }
+  .footer_ul3-item:nth-child(1){
+    margin-right: 0;
+  }
+  .footer_ul3-item:nth-child(2){
+    margin-right: 0;
+  }
+.svg-opl{
+  margin-right: 10px;
+  width: 45px;
+}
+.main_span--two-color1{
+  display: none;
+}
+.main_span--color2{
+  color: #231815;
+}
+.main_span--color1-before:before{
+  content: "3 040 ₽";
+  color: #231815;
+}
+.main_list-item{
+  width: 155px;
+}
+.div--flex--destop{
+  display: block;
+}
+.img--none{
+  display: none;
+}
+.img--none1{
+  display: block;
+}
+.before::before{
+  content: '3 040 ₽';
+}
+.before1::before{
+  content: 'SuperDZS Аэрогриль efRP6iSi';
+}
+.before4::before{
+  content: '6 700 ₽';
+  color: #231815;
+}
+.special{
+  display: block;
+}
+}
+ 
+ 
