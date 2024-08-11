@@ -184,7 +184,7 @@
   margin-bottom: 60px;
  }
  .main{
-  margin: 0 13% 60px;
+  margin: 0 13% 80px;
  }
  .main_header{
   font-family: "Korataki";
@@ -206,6 +206,8 @@
   line-height: 25px;
   color: #231815;
   margin: 20px 0 12px;
+  display: flex;
+  justify-content: start;
  }
  .main_span{
   font-family: "Lato";
@@ -489,6 +491,20 @@
 .logo-svg4{
   display: none;
 }
+.div--flex{
+  display: flex;
+  justify-content: start;
+}
+.main_span {
+  display: flex;
+  justify-content: start;
+}
+.main_span--two-color{
+  margin-left: 5%;
+}
+.main_h2--before5:before{
+  content: "Встраиваемый светильник Markt";
+}
 
 
 @media(max-width:1919px){
@@ -542,6 +558,9 @@
 .logo-svg4{
   display: none;
 }
+.div--flex--destop{
+  display: none;
+}
 }
 @media(max-width:1599px){
   .main_img{
@@ -590,6 +609,23 @@
   }
   .footer_list-list-paragraph5{
     width: 248px;
+  }
+  .paragraph {
+    width: 292px;
+  }
+  .footer_list-list-paragraph--margin5 {
+    width: 252px;
+  }
+  .div--flex--destop{
+    display: none;
+  }
+}
+@media(max-width:1540px){
+  .main_h2{
+    font-size: 14px;
+  }
+  .div--flex--destop{
+    display: none;
   }
 }
 @media(max-width:1199px){
@@ -643,7 +679,7 @@ display: none;
   left: 20%;
 }
 .img-button--color {
-  left: 25%;
+  left: 10%;
   top: 70%;
 }
 .main_list {
@@ -745,10 +781,19 @@ justify-content: left;
 .footer_list-list-item--width{
   width: 150px;
 }
+.main_span--two-color{
+  margin-left: 6%;
+}
+.main_h2{
+  font-size: 18px;
+}
+.div--flex--destop{
+  display: none;
+}
 }
 @media(max-width:767px){
 .main_h2--before:before{
-  content: "Линейный светильник ARG";
+  content: "SuperDZS Аэрогриль efRP6iSi";
 }
   .main_header {
     font-size: 24px;
@@ -856,6 +901,7 @@ grid-row-start: 7;
 }
 .div--flex--destop{
   display: block;
+  display: flex;
 }
 .img--none{
   display: none;
@@ -905,8 +951,31 @@ grid-row-start: 7;
 .paragraph{
   width: 321px;
 }
+.main_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+  align-content: center;
+  justify-items: center;
+}
+.main_span--two-color{
+  margin-left: 6%;
+}
+.main_h2{
+  font-size: 16px;
+  width: 160px;
+}
+.main_h2{
+  text-align: left;
+}
+.main_h2--before5:before{
+  content: "Линейный светильник ARG";
+}
 }
 @media(min-width:1919px){
+  .div--flex--destop{
+    display: none;
+  }
   .footer_list-list-item:nth-child(2){
     width: 345px;
   }
