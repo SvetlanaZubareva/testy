@@ -480,12 +480,18 @@
 .footer_list-list-paragraph--margin5{
   width: 260px;
 }
+.logo-svg3{
+  display: none;
+}
+.color1{
+  color: #F5F5F5;
+}
+.logo-svg4{
+  display: none;
+}
 
 
 @media(max-width:1919px){
-  .list1 {
-    width: 15%;
-    }
 .header_section{
     padding-right: 11%;
   }
@@ -524,20 +530,75 @@
 .img-button--color{
   margin-left: -8%;
 }
-.footer{
-  padding: 0 11% 0;
+.paragraph {
+  width: 300px;
 }
-.footer_list {
-  padding: 61px 0 60px;
-  display: grid;
-  grid-template-columns: 29%;
-  gap: 0;
+.footer_list{
+  gap: 2%;
+}
+.list1 {
+  width: 14%;
+}
+.logo-svg4{
+  display: none;
 }
 }
 @media(max-width:1599px){
-  .div--width{
-    position: relative;
-    width: 320px;
+  .main_img{
+    width: 100%;
+  }
+  .list1 {
+    width: 17%;
+  }
+  .list2{
+    width: 36%;
+  }
+  .img-button--color {
+    margin-left: -8%;
+    width: 95%;
+    top: 360px;
+  }
+  .footer {
+    padding: 0 11% 60px;
+  }
+  .logo-svg0{
+    display: block;
+  }
+  .logo-svg{
+    display: none;
+  }
+  .logo-svg2{
+    display: block;
+  }
+  .footer_list{
+    gap: 1%;
+  }
+  .footer_list-list-item:nth-child(2){
+    /* width: 292px; */
+  }
+  .footer_list-list-paragraph--margin{
+    margin-bottom: 0;
+  }
+  .footer_list-list-item:nth-child(5) {
+    width: 146px;
+  }
+  .footer_list-list-item:nth-child(6) {
+    width: 248px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  .footer_list-list-paragraph5{
+    width: 248px;
+  }
+}
+@media(max-width:1199px){
+  .logo-svg4{
+    display: none;
+  }
+  .logo-svg3{
+    display: block;
+    margin-bottom: 33px;
   }
   .burger {
     margin: 8px 25px 0
@@ -572,7 +633,7 @@ display: none;
   display: none;
 }
 .logo-svg2{
-  display: block;
+  display: none;
 }
 .main_header {
   font-size: 32px;
@@ -582,12 +643,11 @@ display: none;
   left: 20%;
 }
 .img-button--color {
-  left: 20%;
+  left: 25%;
+  top: 70%;
 }
 .main_list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  gap: 5%;
 }
 .header_list {
   padding: 12px 6% 0;
@@ -595,12 +655,12 @@ display: none;
 .main {
   margin: 0 6% 60px;
 }
-/* .main_list {
+.main_list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-} */
+}
 .main_list-item {
   margin-bottom: 50px;
 }
@@ -615,18 +675,12 @@ br{
 }
 .footer_list{
   gap: 3%;
-  grid-template-columns: 1fr 1fr 20%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .footer_list-list-item:nth-child(2){
   grid-column-start: 2;
   grid-row-start: 4;
   grid-column-end: 4;
-  /* justify-content: end;
-  display: flex; */
-}
-.footer_list-list-item--flex{
-  justify-content: end;
-  display: flex;
 }
 .footer_list-list-item:nth-child(3){
   grid-column-start: 1;
@@ -636,11 +690,15 @@ br{
   grid-column-start: 3;
   grid-row-start: 2;
   grid-row-end: 4;
+  width: 100%;
+display: flex;
+justify-content: end;
 }
 .footer_list-list-item:nth-child(6){
 grid-column-start: 1;
 grid-row-start: 3;
 grid-column-end: 3;
+width: 242px;
 
 }
 .footer_list-list-item:nth-child(7){
@@ -659,24 +717,36 @@ justify-content: left;
 .footer_ul3{
   justify-content: start;
 }
-.footer_list-list-item:nth-child(1){
-  margin-bottom: 33px;
-}
-.footer_list-list-item:nth-child(5){
+.footer_list-list-item:nth-child(2) {
   width: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.footer_list-list-item:nth-child(4) {
+  width: 246px;
+}
+.paragraph {
+  width: 390px;
+  margin-left: 75px;
+  display: flex;
+  justify-content: end;
+}
+.footer_ul3 {
+  align-items: center;
 }
 .footer_list-list{
   margin-bottom: 40px;
+  width: 150px;
 }
-.paragraph{
-  width: 390px;
+.ul-contact{
+  margin-left: 20px;
 }
-.main_list-item{
-  display: flex;
-  justify-content: center;
+.footer_list-list-item--width{
+  width: 150px;
 }
 }
-@media(max-width:769px){
+@media(max-width:767px){
 .main_h2--before:before{
   content: "Линейный светильник ARG";
 }
@@ -720,10 +790,8 @@ justify-content: left;
   margin: 0 6% 60px;
 }
 .main_list{
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer{
@@ -759,7 +827,7 @@ grid-row-start: 7;
 }
 .footer_list-list-item:nth-child(7){
   grid-column-start: 1;
-  grid-row-start: 6;
+  grid-row-start: 8;
   text-align: start;
   justify-content: start;
   }
@@ -808,13 +876,43 @@ grid-row-start: 7;
 .special{
   display: block;
 }
-.footer_list-list-item:nth-child(1) {
-  margin-bottom: 0;
+.ul-contact{
+  margin-left: 0;
+}
+.footer_list-list-item:nth-child(4){
+  justify-content: start;
+  margin-top: 0;
+}
+.footer_list-list-item:nth-child(5){
+  justify-content: start;
+  margin-top: 0;
+}
+.footer_list-list-item:nth-child(2){
+  justify-content: start;
+}
+.paragraph{
+  margin-left: 0;
+}
+.footer_list-list-paragraph3{
+  margin-bottom: 20px;
+}
+.top{
   margin-top: 30px;
 }
-.footer_list-list-paragraph--margin {
-  margin-bottom: 0;
+.footer_list-list-item:nth-child(7){
+  grid-row-start: 6;
 }
+.paragraph{
+  width: 321px;
+}
+}
+@media(min-width:1919px){
+  .footer_list-list-item:nth-child(2){
+    width: 345px;
+  }
+  .footer_list{
+    gap: 2%;
+  }
 }
  
  
